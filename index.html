@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Promedio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Calculador de Promedio</a>
+    </nav>
+    <div class="container mt-4">
+        <form id="gradeForm">
+            <div class="form-group">
+                <label for="studentName">Nombre del estudiante:</label>
+                <input type="text" class="form-control" id="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Asignatura:</label>
+                <input type="text" class="form-control" id="subject" required>
+            </div>
+            <h3>Notas por Unidad:</h3>
+            <!-- Unidad 1 -->
+            <div class="form-group">
+                <label for="unit1Note1">Unidad 1 - Nota 1:</label>
+                <input type="number" step="0.1" class="form-control" id="unit1Note1" required>
+            </div>
+            <div class="form-group">
+                <label for="unit1Note2">Unidad 1 - Nota 2:</label>
+                <input type="number" step="0.1" class="form-control" id="unit1Note2" required>
+            </div>
+            <!-- Unidad 2 -->
+            <div class="form-group">
+                <label for="unit2Note1">Unidad 2 - Nota 1:</label>
+                <input type="number" step="0.1" class="form-control" id="unit2Note1" required>
+            </div>
+            <div class="form-group">
+                <label for="unit2Note2">Unidad 2 - Nota 2:</label>
+                <input type="number" step="0.1" class="form-control" id="unit2Note2" required>
+            </div>
+            <!-- Unidad 3 -->
+            <div class="form-group">
+                <label for="unit3Note1">Unidad 3 - Nota 1:</label>
+                <input type="number" step="0.1" class="form-control" id="unit3Note1" required>
+            </div>
+            <div class="form-group">
+                <label for="unit3Note2">Unidad 3 - Nota 2:</label>
+                <input type="number" step="0.1" class="form-control" id="unit3Note2" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular Promedio</button>
+        </form>
+        <div id="results" class="mt-4">
+            <!-- Resultados se mostrarán aquí -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
